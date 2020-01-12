@@ -1,0 +1,35 @@
+CSS 343 Assignment 4 - Store
+
+To build from source:
+1) Open the Linux Terminal
+
+2) Change directory to the folder containing your source files
+
+3) Verify that you have three text files in the same directory. These should be named "data4commands.txt", "data4movies.txt", and "data4customers.txt". Verify this with the following commands.
+	$ test -e data4commands.txt && echo "File exist" || "File not exist"
+	$ test -e data4customers.txt && echo "File exist" || "File not exist"
+	$ test -e data4movies.txt && echo "File exist" || "File not exist"
+   The console should display "File exist" after each command. If not, load text files of the missing titles into the folder containing the source files.
+
+4) Verify that you have GNU++ installed using the following commands:
+	$ whereis gcc
+	$ which gcc
+	$ gcc --version
+
+5) Type the following command:
+	$ g++ bintree.cpp classic.cpp comedy.cpp customer.cpp drama.cpp merchandise.cpp movie.cpp store.cpp transaction.cpp main.cpp -o store.exe
+   This will create an executable file named store.exe that you can then run. Continue to step 3 in the next section.
+
+To run from an executable:
+
+1) Open the Linux Terminal.
+
+2) Change the directory to the folder containing the executable file.
+
+3) Change the directory to the executable. if you followed the previous steps, change the directory to store.exe. Otherwise, use the name you gave it.
+
+4) Wait for the program to finish executing.
+
+5) Verify the output to ensure it is as expected
+
+6) Close the Linux Terminal
